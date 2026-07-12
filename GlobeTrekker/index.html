@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GlobeTrekker | Premium Travel Experiences</title>
+    <meta name="description" content="Discover breathtaking tropical beaches, magnificent mountains, and vibrant cities with GlobeTrekker.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <!-- Header & Navigation -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">Globe<span>Trekker</span></a>
+            
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
+                    <li class="nav__item"><a href="#destinations" class="nav__link">Destinations</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">About Us</a></li>
+                    <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <!-- Hamburger Icon -->
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4 6H20M4 12H20M4 18H20" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main">
+        
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div class="hero__background">
+                <img src="images/hero_bg.png" alt="Hero Background">
+                <div class="hero__overlay"></div>
+            </div>
+            <div class="hero__content container">
+                <h1 class="hero__title">Explore The Unseen</h1>
+                <p class="hero__subtitle">Your journey to the world's most spectacular destinations begins here. Dive into the beauty of nature and the vibrant life of modern cities.</p>
+                <a href="#destinations" class="button">Start Exploring</a>
+            </div>
+        </section>
+
+        <!-- Destinations Section -->
+        <section class="destinations section" id="destinations">
+            <div class="container">
+                <h2 class="section__title">Popular Destinations</h2>
+                <p class="section__subtitle">Curated experiences just for you</p>
+
+                <div class="destinations__container grid">
+                    
+                    <!-- Destination 1: Beach -->
+                    <article class="destination__card">
+                        <div class="destination__image-wrapper">
+                            <img src="images/beach.png" alt="Tropical Beach" class="destination__img">
+                            <div class="destination__badge">Tropical</div>
+                        </div>
+                        <div class="destination__data">
+                            <h3 class="destination__title">Paradise Beaches</h3>
+                            <p class="destination__description">Crystal clear waters and white sandy shores await. Perfect for relaxation and finding your inner peace.</p>
+                            <a href="#" class="button button--link view-packages-btn" data-id="beach">View Packages →</a>
+                        </div>
+                    </article>
+
+                    <!-- Destination 2: Mountains -->
+                    <article class="destination__card">
+                        <div class="destination__image-wrapper">
+                            <img src="images/mountain.png" alt="Snowy Mountains" class="destination__img">
+                            <div class="destination__badge">Adventure</div>
+                        </div>
+                        <div class="destination__data">
+                            <h3 class="destination__title">Alpine Heights</h3>
+                            <p class="destination__description">Breathtaking snow-capped peaks and lush valleys. Ideal for hiking, skiing, and true adventurers.</p>
+                            <a href="#" class="button button--link view-packages-btn" data-id="mountain">View Packages →</a>
+                        </div>
+                    </article>
+
+                    <!-- Destination 3: City -->
+                    <article class="destination__card">
+                        <div class="destination__image-wrapper">
+                            <img src="images/city.png" alt="Modern City Skyline" class="destination__img">
+                            <div class="destination__badge">Urban</div>
+                        </div>
+                        <div class="destination__data">
+                            <h3 class="destination__title">Neon Nights</h3>
+                            <p class="destination__description">Experience the vibrant life, culture, and futuristic skylines of the world's most modern cities.</p>
+                            <a href="#" class="button button--link view-packages-btn" data-id="city">View Packages →</a>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about section" id="about">
+            <div class="container about__container grid">
+                <div class="about__data">
+                    <h2 class="section__title">Why Choose GlobeTrekker?</h2>
+                    <p class="about__description">
+                        We believe that travel is not just about visiting a place, it's about experiencing a new way of life. Our expert guides and carefully curated itineraries ensure that you see the world from a unique perspective.
+                    </p>
+                    <ul class="about__list">
+                        <li>
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                            <span>Premium Accommodations</span>
+                        </li>
+                        <li>
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                            <span>Exclusive Experiences</span>
+                        </li>
+                        <li>
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                            <span>24/7 Concierge Support</span>
+                        </li>
+                    </ul>
+                    <a href="#contact" class="button">Contact Us</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Modal -->
+        <div class="modal" id="destination-modal">
+            <div class="modal__content">
+                <span class="modal__close" id="modal-close">&times;</span>
+                <img src="" alt="" class="modal__img" id="modal-img">
+                <div class="modal__data">
+                    <h3 class="modal__title" id="modal-title"></h3>
+                    <p class="modal__description" id="modal-description"></p>
+                    <div class="modal__packages">
+                        <h4>Available Packages:</h4>
+                        <ul id="modal-packages-list">
+                            <!-- injected dynamically -->
+                        </ul>
+                    </div>
+                    <a href="#contact" class="button" id="modal-book-btn">Book Now</a>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer section" id="contact">
+        <div class="container footer__container grid">
+            <div class="footer__content">
+                <a href="#" class="footer__logo">Globe<span>Trekker</span></a>
+                <p class="footer__description">Redefining the art of travel<br> for the modern explorer.</p>
+            </div>
+
+            <div class="footer__content">
+                <h3 class="footer__title">Quick Links</h3>
+                <ul class="footer__links">
+                    <li><a href="#home" class="footer__link">Home</a></li>
+                    <li><a href="#destinations" class="footer__link">Destinations</a></li>
+                    <li><a href="#about" class="footer__link">About Us</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__content">
+                <h3 class="footer__title">Legal</h3>
+                <ul class="footer__links">
+                    <li><a href="#" class="footer__link">Privacy Policy</a></li>
+                    <li><a href="#" class="footer__link">Terms of Service</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer__bottom container">
+            <p class="footer__copy">&#169; GlobeTrekker. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
